@@ -3,7 +3,13 @@
 ## ✅ What I Did in This Lab
 I used common Linux commands to create, verify, and understand how links behave differently from copies. I explored how links are used to manage files efficiently and reduce redundancy.
 
+[EXAM OBJECTIVE 104.6](https://www.lpi.org/our-certifications/exam-101-102-objectives/#104.6_Create_and_change_hard_and_symbolic_links)
 
+[OBJ.104.6 NOTES]()
+
+[OBJ.104.6 LAB]()
+
+---
 
 ## 1️⃣ Create a Test File
 
