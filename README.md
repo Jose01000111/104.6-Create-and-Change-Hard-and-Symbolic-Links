@@ -5,7 +5,7 @@ I used common Linux commands to create, verify, and understand how links behave 
 
 [EXAM OBJECTIVE 104.6](https://www.lpi.org/our-certifications/exam-101-102-objectives/#104.6_Create_and_change_hard_and_symbolic_links)
 
-[OBJ.104.6 NOTES]()
+[OBJ.104.6 NOTES](https://1drv.ms/w/c/354f1c8d534fbced/EWELnEweb3lCs_fWI_qeU-gBxafGWZxg2Y2ex4vdN3rr7w?e=aM0XQ4)
 
 [OBJ.104.6 LAB](https://1drv.ms/w/c/354f1c8d534fbced/EebFPuWMmvVBq3kvNm9WYggBe8uwQZ6b2pqGn_fO990GGw?e=iJvWbg)
 
