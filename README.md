@@ -7,7 +7,7 @@ I used common Linux commands to create, verify, and understand how links behave 
 
 [OBJ.104.6 NOTES]()
 
-[OBJ.104.6 LAB]()
+[OBJ.104.6 LAB](https://1drv.ms/w/c/354f1c8d534fbced/EebFPuWMmvVBq3kvNm9WYggBe8uwQZ6b2pqGn_fO990GGw?e=iJvWbg)
 
 ---
 
