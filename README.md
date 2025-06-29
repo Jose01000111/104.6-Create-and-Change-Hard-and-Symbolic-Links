@@ -15,117 +15,57 @@ I used common Linux commands to create, verify, and understand how links behave 
 
 ### 🔹Create a simple file to use as our target
 
-bash
-Copy
-Edit
-echo "Hello, LPIC-1!" > original.txt
-
 ### 🔹View its contents and inode number
 
-bash
-Copy
-Edit
-cat original.txt  
-ls -li original.txt
+![Bnq3NDw](https://github.com/user-attachments/assets/4038e871-77a8-46ad-9e27-a8fd7a424507)
 
 ## 2️⃣ 🔗 Create a Hard Link
 
 ### 🔹Create a hard link to the original file
 
-bash
-Copy
-Edit
-ln original.txt hardlink.txt
-
 ### 🔹Check inode numbers (they should be the same)
-
-bash
-Copy
-Edit
-ls -li original.txt hardlink.txt
 
 ### 🔹Modify one file and observe changes in the other
 
-bash
-Copy
-Edit
-echo "Hard links share data." >> hardlink.txt  
-cat original.txt
+![uSzphDt](https://github.com/user-attachments/assets/b7fbdfbb-3d8c-464d-965a-a3711fda09c3)
+
 ## 3️⃣ 🔗 Create a Symbolic (Soft) Link
 
 ### 🔹Create a symbolic link to the original file
 
-bash
-Copy
-Edit
-ln -s original.txt symlink.txt
-
 ### 🔹Check symbolic link details
-
-bash
-Copy
-Edit
-ls -l symlink.txt
 
 ### 🔹Read the contents of the symbolic link
 
-bash
-Copy
-Edit
-cat symlink.txt
+![GapzPyO](https://github.com/user-attachments/assets/add9af02-9f6f-40cd-9449-1333feadb50d)
 
 ## 4️⃣ 🔍 Delete the Original File
 
 ### 🔹Remove the original file and observe behavior
 
-bash
-Copy
-Edit
-rm original.txt
-
 ### 🔹Check what happens to each link
 
-bash
-Copy
-Edit
-cat hardlink.txt    # Still works  
-cat symlink.txt     # Will fail
+![34a5Cte](https://github.com/user-attachments/assets/66b9934a-dcff-4f5d-92b3-4759afa8376e)
+
 ## 5️⃣ 🆚 Copy vs Link
 
 ### 🔹Copy the hard link to a new file
 
-bash
-Copy
-Edit
-cp hardlink.txt copied.txt
-
 ### 🔹Check inode numbers to see the difference
 
-bash
-Copy
-Edit
-ls -li hardlink.txt copied.txt
+![u2N3fs0](https://github.com/user-attachments/assets/7fdf4cd9-3fca-46ef-a151-ea69130b3e66)
 
 ## 6️⃣ ⚙️ System Administration Use
 
 ### 🔹Use symbolic links for version management
 
-bash
-Copy
-Edit
-mkdir -p /opt/tool-v1  
-touch /opt/tool-v1/run.sh  
-ln -s /opt/tool-v1 /opt/tool
-ls -l /opt/tool
+![7uF1YWy](https://github.com/user-attachments/assets/29800df5-aa24-4b05-9beb-9e4e0daeb8ca)
 
 ### 🔹Update the link to a new version
 
-bash
-Copy
-Edit
-mkdir -p /opt/tool-v2  
-ln -sfn /opt/tool-v2 /opt/tool
-ls -l /opt/tool
+![0hsSR5P](https://github.com/user-attachments/assets/3026aae4-b3ce-4dcc-95ee-f41a1051b57a)
+
+---
 
 ## 🎓 What I Learned
 I learned the difference between hard links and symbolic links, including how each behaves when the original file is modified or deleted. Hard links point to the same inode, while symbolic links point to the pathname. This lab helped me understand how linking supports system administration, version control, and efficient file handling. 🧠
